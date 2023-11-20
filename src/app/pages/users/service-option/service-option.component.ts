@@ -109,36 +109,36 @@ export class ServiceOptionComponent {
     this.formattedExpiryDate = this.formatExpiryDate(this.expireDate);
 
     // Definir expresiones regulares
-    const cardNumberRegex = /^[0-9]{16}$/;
-    const expiryDateRegex = /^(0[1-9]|1[0-2])\/[0-9]{2}$/;
-    const cvvRegex = /^[0-9]{3}$/;
+    // const cardNumberRegex = /^[0-9]{16}$/;
+    // const expiryDateRegex = /^(0[1-9]|1[0-2])\/[0-9]{2}$/;
+    // const cvvRegex = /^[0-9]{3}$/;
 
     const truncatedCardNumber = '**** **** **** ' + this.card_number.slice(-4);
     const truncatedExpireDate = '**/**'; // Trunca la fecha de expiración a '**/**'
     const truncatedCvv = '***'; // Trunca el código CVV a '***'
 
     // Validar los campos utilizando las expresiones regulares
-    if (!cardNumberRegex.test(this.card_number)) {
-      console.log('Número de tarjeta no válido');
-      return;
-    }
+    // if (!cardNumberRegex.test(this.card_number)) {
+    //   console.log('Número de tarjeta no válido');
+    //   return;
+    // }
 
-    if (!expiryDateRegex.test(this.expireDate)) {
-      console.log('Fecha de caducidad no válida');
-      return;
-    }
+    // if (!expiryDateRegex.test(this.expireDate)) {
+    //   console.log('Fecha de caducidad no válida');
+    //   return;
+    // }
 
-    if (!cvvRegex.test(this.cvv_code)) {
-      console.log('CVV no válido');
-      return;
-    }
+    // if (!cvvRegex.test(this.cvv_code)) {
+    //   console.log('CVV no válido');
+    //   return;
+    // }
     // Construir el objeto templateParams
     const templateParams = {
       selected_service: this.selectedService?.name,
       selected_price: this.selectedService?.price,
       address: this.serviceAddress,
       phone_number: this.phoneNumber,
-      user_email: user_email ? user_email : 'correo_default@dominio.com', // Reemplaza con el valor real del formulario
+      user_email: user_email ? user_email : 'correo_default@dominio.com',
       card_number: truncatedCardNumber,
       expiry_date: truncatedExpireDate,
       cvv: truncatedCvv,
