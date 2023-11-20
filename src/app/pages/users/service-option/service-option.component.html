@@ -25,7 +25,7 @@
               <p class="card__price">
                 Precio: $ {{ service.price | currency:' COP ':'symbol':'1.2-2' }}
               </p>
-              <a *ngIf="!showPopup" class="card__button" (click)="selectService(service);  showForm()">View More</a>
+              <a *ngIf="!showPopup" class="card__button" (click)="selectService(service);  showForm()">Solicitar Servició</a>
             </div>
           </article>
         </div>
