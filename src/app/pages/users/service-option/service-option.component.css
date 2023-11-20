@@ -129,6 +129,7 @@ img {
     border-radius: .25rem;
     color: var(--dark-color);
     font-weight: 600;
+    cursor: pointer;
 }
 
 

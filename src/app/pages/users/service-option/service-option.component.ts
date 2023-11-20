@@ -5,6 +5,9 @@ import { AuthService } from '../services/auth.service';
 import { Observable } from 'rxjs';
 import { User } from 'firebase/auth';
 import { EmailService } from '../services/email.service';
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+
+Swiper.use([Navigation, Pagination, Scrollbar]);
 
 @Component({
   selector: 'app-service-option',
