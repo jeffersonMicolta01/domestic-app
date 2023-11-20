@@ -68,6 +68,19 @@ const routes: Routes = [
         (m) => m.CalificacionModule
       ),
   },
+  {
+    path: '',
+    redirectTo: 'user/sign-in',
+    pathMatch: 'full',
+  },
+  {
+    path: 'user/sign-up',
+    canActivate: [authGuard],
+    loadChildren: () =>
+      import('./pages/users/sign-up/sign-up.module').then(
+        (m) => m.SignUpModule
+      ),
+  },
 ];
 
 @NgModule({
