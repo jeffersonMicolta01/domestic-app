@@ -14,11 +14,11 @@ import { AuthService } from 'src/app/pages/users/services/auth.service';
 const actionType = {
   signIn: {
     action: 'signIn',
-    title: 'Sign In',
+    title: 'Inicia sesión',
   },
   signUp: {
     action: 'signUp',
-    title: 'Sign up',
+    title: 'Registrate',
   },
 } as const;
 

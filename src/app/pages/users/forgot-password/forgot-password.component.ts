@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ForgotPasswordComponent implements OnInit {
   private authSvc = inject(AuthService);
-  title = 'Reset your password';
+  title = 'Restablecer su contraseña';
   email!: FormControl;
   isEmailSent = false;
 
