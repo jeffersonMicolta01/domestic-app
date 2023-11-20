@@ -1,0 +1,177 @@
+/* .logo {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  margin-right: 10px; 
+}
+
+.color__txt{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav {
+  padding: 0.3rem;
+  background-color: var(--dark-color);
+}
+.nav__button-1,.nav__button-2 {
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__button-1, .nav__button-2 :hover {
+  background-color: var(--first-color-light);
+}
+
+.nav__email {
+  font-size: var(--h2-font-size);
+  color: var(--second-color);
+  margin-right: 10px;
+}
+
+.nav__button-1,.nav__button-2 {
+  display: inline-block;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+
+  background: white;
+  font-weight: 600;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav__button-2 {
+  display: inline-block;
+  background-color: var(--first-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: var(--dark-color);
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.nav__button-1:hover,
+.nav__button-2:hover {
+  background-color: var(
+    --first-color-light
+  ); 
+} */
+
+
+/* Estilos generales */
+.nav {
+  padding: 0.3rem;
+  background-color: var(--dark-color);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nav__button-1 {
+  color: var(--dark-color); /* Cambia el color del texto a uno más oscuro */
+  background-color: white; /* Cambia el color de fondo según tus preferencias */
+}
+
+
+.color__txt {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav__button-1,
+.nav__button-2 {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.nav__button-2 {
+  background-color: var(--first-color);
+  color: var(--dark-color);
+}
+
+.nav__button-1,
+.nav__button-2 {
+  color: var(--dark-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__button-1:hover,
+.nav__button-2:hover {
+  background-color: var(--first-color-light);
+}
+
+.nav__email {
+  font-size: var(--h2-font-size);
+  color: var(--second-color);
+  margin-right: 10px;
+}
+
+/* Consulta de medios para pantallas de hasta 768px */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .lg\:ml-auto {
+    margin-top: 1rem;
+  }
+
+  .nav__button-1,
+  .nav__button-2 {
+    display: block;
+    margin-bottom: 0.5rem;
+   
+    text-align: center;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Consulta de medios para pantallas de 769px a 1023px */
+/* Consulta de medios para pantallas de 769px a 1023px */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .nav {
+    padding: 0.5rem;
+  }
+
+  .nav__button-1,
+  .nav__button-2 {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Consulta de medios para pantallas de 1024px en adelante */
+@media (min-width: 1024px) {
+  .nav {
+    padding: 0.7rem;
+  }
+
+  .nav__button-1,
+  .nav__button-2 {
+    padding: 0.6rem 1rem;
+    margin: 2px;
+  }
+}

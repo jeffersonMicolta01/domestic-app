@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "login-firebase-angular-4839c": {
+      "hosting": {
+        "DOMESTIC-APP": [
+          "login-firebase-angular-4839c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "login-firebase-angular-4839c"
+  }
+}

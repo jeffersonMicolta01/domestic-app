@@ -1,0 +1,79 @@
+<body>
+
+  <section class="container">
+
+    <div class="card__container swiper">
+      <div class="card__content">
+        <div class="swiper-wrapper">
+
+
+          <article *ngFor="let service of serviceOptions" class="card__article swiper-slide">
+            <div class="card__image">
+              <img [src]="'/assets/img/image-service-' + service.id + '.png'" alt="image" class="card__img">
+              <div class="card__shadow"></div>
+            </div>
+
+            <div class="card__data">
+              <h3 class="card__name">{{ service.name }}</h3>
+              <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+              </div>
+              <p class="card__price">
+                Precio: $ {{ service.price | currency:' COP ':'symbol':'1.2-2' }}
+              </p>
+              <a *ngIf="!showPopup" class="card__button" (click)="selectService(service);  showForm()">View More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="swiper-button-prev">
+        <i class="ri-arrow-left-s-line"></i>
+      </div>
+      <div class="swiper-button-next">
+        <i class="ri-arrow-right-s-line"></i>
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+</body>
+
+<!-- payment-form.component.html -->
+
+<div *ngIf="showPopup" [ngClass]="{'show-form': showPopup}" class="modal-overlay"></div>
+
+<div *ngIf="showPopup" [ngClass]="{'show-form': showPopup}" class="modal-container">
+  <form>
+    <!-- Agrega los campos del formulario de pago aquí -->
+
+    <label for="seviceName">Servicio Selecionado:</label>
+    <p id="serviceName" name="serviceName">{{ selectedService?.name }}</p>
+    <br>
+    <label for="seviceName">Precio del Servicio:</label>
+    <p id="serviceName" name="serviceName">${{ selectedService?.price }}</p>
+
+    <label for="serviceAddress">Direcion para el servicio:</label>
+    <input type="text" id="serviceAddress" name="serviceAddress" required>
+    <br>
+    <label for="phoneNumber">Telefono de Contacto:</label>
+    <input type="text" id="phoneNumber" name="phoneNumber"  required>
+    <br>
+    <label for="cardNumber">Número de tarjeta:</label>
+    <input type="text" id="cardNumber" name="cardNumber" [(ngModel)]="formattedCardNumber" required>
+    <br>
+    <label for="expiryDate">Fecha de caducidad:</label>
+    <input type="text" id="expiryDate" name="expiryDate" [(ngModel)]="formattedExpiryDate" required>
+    <br>
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required>
+    <br>
+    <button type="button" class="card__button" (click)="hideForm()">Cerrar</button>
+    <button type="button" class="card__button" (click)="finalizarPago()">Finalizar pago</button>
+  </form>
+</div>

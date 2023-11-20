@@ -1,0 +1,22 @@
+<nav class="nav">
+    <div class="flex flex-wrap w-full px-6">
+        <div class="space-x-4">
+            <a *ngIf="user$ | async as user" routerLink="home" class="flex items-center color__txt">
+                <img src="/assets/img/home-2.png" alt="home" class="logo">Home
+            </a>
+            <!-- <a *ngIf="user$ | async as user" routerLink="user/profile"
+                class="bg-gray-200 hover:bg-gray-300 inline-block px-6 py-2.5 mr-2.5 font-medium text-xl rounded">Profile</a> -->
+        </div>
+        <div class="lg:ml-auto">
+            <ng-container *ngIf="user$ | async as user; else showLinks">
+                <span class="nav__email">{{ user.email }}</span>
+                <a routerLink="user/sign-in" (click)="onSignOut()" class="nav__button-2">Sign Out</a>
+            </ng-container>
+            <ng-template #showLinks>
+                <a routerLink="user/sign-in" class="nav__button-1">Sign In</a>
+                <a routerLink="user/sign-up" class="nav__button-2">Sign
+                    Up</a>
+            </ng-template>
+        </div>
+    </div>
+</nav>

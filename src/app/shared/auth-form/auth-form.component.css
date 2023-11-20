@@ -1,0 +1,292 @@
+.invalid {
+  @apply text-red-500 border-red-500 placeholder-red-500;
+}
+:root {
+  /*========== Colors ==========*/
+  --first-color: hsl(38, 92%, 58%);
+  --first-color-light: hsl(38, 100%, 78%);
+  --first-color-alt: hsl(32, 75%, 50%);
+  --second-color: hsl(195, 75%, 52%);
+  --dark-color: hsl(212, 40%, 12%);
+  --white-color: hsl(212, 4%, 95%);
+  --body-color: hsl(212, 42%, 15%);
+  --container-color: hsl(212, 42%, 20%);
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+
+
+/* component.css */
+
+/* Styles for the form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--container-color);
+}
+
+/* Styles for the form wrapper */
+.form-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Styles for the form content */
+.form-content {
+  padding: 20px;
+}
+
+/* Styles for the form title */
+.form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+/* Styles for the custom form */
+.custom-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the email container */
+.email-container {
+  margin-bottom: 20px;
+}
+
+/* Styles for form labels */
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+/* Styles for email input */
+.email-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  font-size: 1rem;
+  font-family: var(--body-font);
+}
+
+/* Styles for password input */
+.password-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+  font-size: 1rem;
+  font-family: var(--body-font);
+}
+
+/* Styles for form actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for forgot password link */
+.forgot-password-link {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--second-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-password-link:hover {
+  color: var(--first-color);
+}
+
+/* Styles for the submit button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--first-color);
+  color: var(--dark-color);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: var(--first-color-alt);
+}
+
+/* Styles for the form note */
+.form-note {
+  font-size: 0.875rem;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+/* Styles for the signup link */
+.signup-link {
+  font-weight: bold;
+  color: var(--first-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-link:hover {
+  color: var(--first-color-alt);
+}
+
+/* Styles for the Google login button */
+.google-login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4285F4;
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 16px;
+}
+
+.google-login-button:hover {
+  background-color: #357AE8;
+}
+
+/* Styles for the signin link */
+.signin-link {
+  font-weight: bold;
+  color: var(--first-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signin-link:hover {
+  color: var(--first-color-alt);
+}
+
+/* Agrega estos estilos al final de tu archivo component.css */
+
+/* Styles for the logo container */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the logo */
+.logo {
+  width: 200px;
+  height: auto; /* Para mantener la proporción original */
+  margin-bottom: 10px;
+  /* padding: 100px; */
+}
+
+/* Styles for the form title */
+.form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-color);
+  margin-bottom: 20px;
+}
+
+/* Resto de tus estilos... */
+
+/* Agrega estos estilos al final de tu archivo component.css */
+
+/* Media queries para pantallas más pequeñas (< 300px) */
+@media screen and (max-width: 300px) {
+  /* Ajusta el tamaño del contenedor del formulario */
+  .form-wrapper {
+    max-width: 100%;
+  }
+
+  /* Ajusta el tamaño de la imagen del logo para pantallas más pequeñas */
+  .logo {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  /* Ajusta el tamaño del título del formulario para pantallas más pequeñas */
+  .form-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  /* Ajusta el tamaño del texto del formulario para pantallas más pequeñas */
+  .form-content {
+    padding: 15px;
+  }
+
+  /* Ajusta el tamaño del texto del formulario para pantallas más pequeñas */
+  .email-input,
+  .password-input {
+    font-size: 0.9rem;
+  }
+
+  /* Ajusta el tamaño del botón de envío para pantallas más pequeñas */
+  .submit-button,
+  .google-login-button {
+    padding: 10px;
+  }
+}
+
+/* Media queries para pantallas pequeñas (576px) y más */
+@media screen and (min-width: 576px) {
+  /* Ajusta el tamaño del título del formulario para pantallas pequeñas */
+  .form-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+/* Media queries para pantallas medianas (768px) y más */
+@media screen and (min-width: 768px) {
+  /* Puedes agregar estilos específicos para pantallas de 768px y más aquí si es necesario */
+
+  /* Ajusta el tamaño del contenedor del formulario para pantallas medianas */
+  .form-wrapper {
+    max-width: 400px; /* O el ancho que prefieras */
+  }
+
+  /* Ajusta el tamaño de la imagen del logo para pantallas medianas */
+  .logo {
+    width: 200px;
+  }
+}
+
+/* Media queries para pantallas grandes (1150px) y más */
+@media screen and (min-width: 1150px) {
+  /* Puedes agregar estilos específicos para pantallas de 1150px y más aquí si es necesario */
+}
+
+/* Resto de tus estilos... */
