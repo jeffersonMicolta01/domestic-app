@@ -185,7 +185,7 @@ img {
   z-index: 1000;
 }
 
-/* Estilos para el contenedor del formulario */
+
 .modal-container {
   position: fixed;
   top: 50%;
@@ -200,13 +200,11 @@ img {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* Mostrar el formulario */
 .modal-container.show-form {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Estilos para el formulario dentro del contenedor */
 .modal-container form {
   width: 500px;
   margin: 20px auto;
@@ -217,13 +215,13 @@ img {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* Estilos para las etiquetas dentro del formulario */
+
 .modal-container form label {
   display: block;
   margin-bottom: 8px;
 }
 
-/* Estilos para los campos de entrada dentro del formulario */
+
 .modal-container form input {
   width: 100%;
   padding: 12px;
@@ -234,24 +232,29 @@ img {
   transition: border-color 0.3s;
 }
 
-/* Estilos cuando el campo de entrada está enfocado */
-.modal-container form input:focus {
-  outline: none;
-  border-color: #3498db;
-  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
-}
 
-/* Estilos para el botón dentro del formulario */
 .modal-container form button {
   text-align: center;
   align-content: center;
   justify-content: center;
   transition: background-color 0.3s ease-in-out;
+  margin-right: 10px; 
 }
 
-/* Cambiar color de fondo al pasar el mouse sobre el botón */
+
 .modal-container form button:hover {
   background-color: #2980b9;
+}
+
+
+.modal-container form .card__button-close {
+  background-color: #ccc;
+  color: #333;
+}
+
+.modal-container form .card__button-finish {
+  background-color: #4caf50;
+  color: #fff;
 }
 
 /*=============== BREAKPOINTS ===============*/
