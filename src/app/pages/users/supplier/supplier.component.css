@@ -64,7 +64,7 @@ img {
     margin-inline: 1.75rem;
     border-radius: 1.25rem;
     overflow: hidden;
-    /* background-color: gray; */
+ 
 }
 
 .card__article{
@@ -130,17 +130,16 @@ img {
     font-weight: 600;
 }
 
-/* stars */
-/* Añadir estilos para las estrellas */
+
 .rating {
-    color: #ffd700; /* Color amarillo para las estrellas */
-    font-size: 1.5rem; /* Tamaño de fuente de las estrellas */
+    color: #ffd700; 
+    font-size: 1.5rem; 
 }
 
 .star {
-    margin-right: 0.25rem; /* Espaciado entre las estrellas */
+    margin-right: 0.25rem; 
 }
-/* Swiper class */
+
 
 .swiper-button-prev::after,
 .swiper-button-next::after{

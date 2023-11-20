@@ -65,7 +65,7 @@ img {
     margin-inline: 1.75rem;
     border-radius: 1.25rem;
     overflow: hidden;
-    /* background-color: gray; */
+
 }
 
 .card__article{
@@ -131,15 +131,14 @@ img {
     font-weight: 600;
 }
 
-/* stars */
-/* Añadir estilos para las estrellas */
+
 .rating {
-    color: #ffd700; /* Color amarillo para las estrellas */
-    font-size: 1.5rem; /* Tamaño de fuente de las estrellas */
+    color: #ffd700; 
+    font-size: 1.5rem; 
 }
 
 .star {
-    margin-right: 0.25rem; /* Espaciado entre las estrellas */
+    margin-right: 0.25rem;
 }
 /* Swiper class */
 
@@ -256,14 +255,13 @@ img {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
+
 @media screen and (max-width: 320px){
     .card__data{
         padding: 1rem;
     }
 }
 
-/* For medium devices */
 @media screen and (min-width: 768px) {
     .card__content{
         margin-inline: 3rem;
@@ -275,11 +273,10 @@ img {
     }
 }
 
-/* For large devices */
+
 @media screen and (min-width: 1120px) {
     .card__container{
         max-width: 1120px;
-        /* background-color: gray; */
     }
 
     .swiper-button-next{
@@ -291,22 +288,20 @@ img {
     }
 }
 
-/* ajustes responsive en el form */
+
 @media screen and (max-width: 320px) {
   .modal-container form {
-    max-width: 95%; /* Reducir aún más el ancho en dispositivos pequeños */
+    max-width: 95%; 
     padding: 15px;
   }
 }
 
-/* Ajustes para tamaños de pantalla medianos */
 @media screen and (min-width: 321px) and (max-width: 768px) {
   .modal-container form {
     max-width: 80%;
   }
 }
 
-/* Ajustes para tamaños de pantalla grandes */
 @media screen and (min-width: 769px) {
   .modal-container form {
     max-width: 500px;
